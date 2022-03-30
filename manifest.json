@@ -1,6 +1,6 @@
 {
-    "name": "Start Page",
-    "short_name": "Start",
+    "name": "UEK_MAP_SOS",
+    "short_name": "UEK_MAP_SOS",
     "icons": [{
       "src": "images/map-128.png",
         "sizes": "128x128",
