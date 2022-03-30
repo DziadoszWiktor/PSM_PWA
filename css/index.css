@@ -5,3 +5,18 @@ a {
 #nav-link {
     font-weight: bold;
 }
+#button{
+    background-color:red;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    margin-top:12%;
+    margin-bottom:12%;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:25px;
+    padding-bottom:25px;
+    border-radius:15px;
+    font-size: 30px; 
+    font-weight: bold"
+}
