@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 body {
     font-family: 'Oswald', sans-serif;
-    background-image: linear-gradient(to bottom, rgb(75, 75, 75), white)
+    background-image: linear-gradient(to bottom, rgb(75, 75, 75), white);
 }
 a {
     text-decoration:none !important;
@@ -9,6 +9,12 @@ a {
     margin-left: 30px;
     margin-right: 30px;
 }
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  color: white !important;
+}
+
 /*
 #map_link_icon{
   transition: width 2s, height 4s;

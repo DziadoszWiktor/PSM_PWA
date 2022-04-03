@@ -17,6 +17,12 @@
       <meta name="apple-mobile-web-app-title" content="PSM_PWA">
       <meta name="msapplication-TileImage" content="images/map-144.png">
       <meta name="msapplication-TileColor" content="#FFFFFF">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" 
+      crossorigin=""></script>
     </head>
 
     <body class="fullscreen">
@@ -36,8 +42,15 @@
       </nav>
 
       <!-- smt -->
-      <div style="height: 600px;">
-      </div>
+      <div class="container" style="text-align:center; height: 550px;">
+        <h2 class="m-4">Kliknij przycisk aby pokazaź twoją lokalizację !</h2>
+
+        <button type="button" class="btn mt-3" onclick="getLocation()" style="font-weight: bold; background-color:black;">
+            <a style="color: #ffffff; text-decoration: none; font-size:22px">Zlokalizuj mnie</a>
+        </button>
+        <div id = "map"></div>
+
+    </div>
 
       <!--Footer-->
       <footer class="page-footer blue text-center text-md-left mt-5" id="footer" style="background-color: rgb(0, 0, 0);">
@@ -48,7 +61,7 @@
                 </div>
                 <div class="col-md-6">
                     <h5 class="title mb-3 mt-5">GitHub</h5>
-                    <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by IconsBox - Flaticon</a><a href="#!" id="uektext" style="text-decoration: none;">Wiktor Karnia</a><br>
+                    <a href="#!" id="uektext" style="text-decoration: none;">Wiktor Karnia</a><br>
                     <a href="#!" id="uektext" style="text-decoration: none;">Wiktor Dziadosz</a><br>
                     <a href="#!" id="uektext" style="text-decoration: none;">Arek Kaproń</a><br>
                 </div>
@@ -61,6 +74,7 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
     </body>
 
 </html>
