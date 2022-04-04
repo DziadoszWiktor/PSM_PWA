@@ -10,7 +10,21 @@ function getLocation() {
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
+function showPosition(position) {
 
+  var map = L.map('map').setView([position.coords.latitude,position.coords.longitude], 16);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  L.marker([position.coords.latitude,position.coords.longitude]).addTo(map)
+    .bindPopup('Jesteś tu!')
+    .openPopup();
+}
+
+
+/*
 function showPosition(position) {
     var map = L.map('map').setView([position.coords.latitude, position.coords.longitude], 16)
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -21,4 +35,4 @@ function showPosition(position) {
         .bindPopup('You are here!')
         .openPopup();
 
-}
+}*/
